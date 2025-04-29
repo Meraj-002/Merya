@@ -148,7 +148,7 @@
 <body>
     
    <!-- Background Music -->
-   <audio src="./assets/foreveryoung.mp3" id="linkmp3"></audio>
+   <audio controls loop src="./assets/shedontgiveup.mp3" id="linkmp3"></audio>
   
    <!-- Overlay -->
    <div class="overlay"><div id="loveIn" class="blocklove"></div></div>
@@ -312,31 +312,28 @@ function katanimasi2() {
         deleteSpeed: 13, // deletion speed
         cursor: true
     })
-    .type('According to <b>biology</b>, you are<br> <b><span class="pink">7%</span> blood</b>~')
+    .type('stay healthy always, <br> <b><span class="pink">you</span> there</b>~')
     .pause(700) // pause 0.7 second after typing finishes
     .delete(78)
     .pause(400) // pause before next text
-    .type('According to <b>chemistry</b>, you are<br> <b><span class="pink">70%</span> water</b>~')
+    .type('Never be late to eat, <br> let alone be late to <span class="pink">pray</span>~')
     .pause(700)
     .delete()
     .pause(400)
-    .type('According to <b>physics</b>, you are<br> <b><span class="pink">99%</span> empty space</b>~')
+    .type('If today feels bad, <br> believe everything will quickly pass...  ')
     .pause(700)
     .delete()
     .pause(400)
     .exec(() => {
         teks4.style = "font-size:18px;font-weight:400;text-align:left;line-height:1.4em";
     })
-    .type('But <b>in my opinion</b>, you are<br><b><span class="pink">1000%</span> my love</b> 🫣❤️')
-    .exec(() => {
-        teks4.innerHTML = 'But <b>in my opinion</b>, you are<br><b><span class="pink">1000%</span> my love</b> 🫣❤️' + `<br><br><span id="teksLove"></span>`;
-        setTimeout(katanimasi3, 200);
-    })
+    .type('<span class="pink">Finally❤️,</span><br> May nothing take away your <br> <span class="pink">smile❤️,</span> and may there always be a way to reach the dreams<br> you once shared, and may the<br> process never betray the outcome... 💐𐭩<br><b>Stay Motivated 🫣💕😍 </b>')
+    
     .go();
 }
 
 function katanimasi3(){
-    initeksAkhir = `ᯓᡣ𐭩<br><b>Dearest Aaliya Azeem</b>,<br>the sweetest, funniest, most adorable<br><b>stay healthy, my dear 😍😋🩷</b>`;
+    initeksAkhir = `ᯓᡣ𐭩<br><b>Stay Motivated 🫣💕😍 </b>,<br></b>`;
     new TypeIt("#teksLove", {
     strings: ["" + initeksAkhir], startDelay: 1, speed: 25, cursor: true,
     afterComplete: function(){
